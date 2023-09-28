@@ -4,7 +4,7 @@ const setupInput  = require("./input.js")
 
 const conn = connect();
 
-const stdin = setupInput()
+const stdin = setupInput(conn)
 
 
 
