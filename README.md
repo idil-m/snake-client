@@ -7,7 +7,7 @@ This is simply a multiplayer take on the genre.
 Before you can run this client, you will need to be running the server side which you can download and install from here. 
 
 ## Final Product
-!["screenshot description"](#)
+![snakeexample](https://github.com/idil-m/snake-client/assets/96976157/e1c22a53-85cb-431f-8c01-d3e848278b98)
 
 
 ## Getting Started
