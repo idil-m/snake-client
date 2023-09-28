@@ -1,6 +1,6 @@
-let connection;  
-const { 
-  EXIT_KEY,  
+let connection;
+const {
+  EXIT_KEY,
   MOVE_UP_KEY,
   MOVE_DOWN_KEY,
   MOVE_RIGHT_KEY,
@@ -8,11 +8,11 @@ const {
   CHAT_ENCOURGAE_KEY,
   CHAT_WARNING_KEY,
   CHAT_SNAKE_KEY,
-  CHAT_TAUNT_KEY 
+  CHAT_TAUNT_KEY
 } = require("./constants");
 
-const handleUserInput = function (key) {
-  if (key === EXIT_KEY ) {  // Exit on Ctrl+C
+const handleUserInput = function(key) {
+  if (key === EXIT_KEY) {
     console.log("Exiting game...");
     process.exit();
   }
@@ -36,15 +36,15 @@ const handleUserInput = function (key) {
   }
   if (key === CHAT_WARNING_KEY) {
     connection.write("Say: too close!");
-  } 
-  if (key === CHAT_TAUNT_KEY ) {
+  }
+  if (key === CHAT_TAUNT_KEY) {
     connection.write("Say: get snaked");
   }
   
 };
 
-const setupInput = function (conn) {
-  connection = conn
+const setupInput = function(conn) {
+  connection = conn;
   const stdin = process.stdin;
   stdin.setRawMode(true);
   stdin.setEncoding("utf8");
@@ -55,4 +55,4 @@ const setupInput = function (conn) {
 };
 
 
-module.exports = setupInput 
+module.exports = setupInput;

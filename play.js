@@ -1,10 +1,10 @@
-const connect = require("./client.js")
+const connect = require("./client.js");
 
-const setupInput  = require("./input.js")
+const setupInput  = require("./input.js");
 
 const conn = connect();
 
-const stdin = setupInput(conn)
+const stdin = setupInput(conn);
 
 
 
