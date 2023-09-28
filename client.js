@@ -17,4 +17,4 @@ const connect = function () {
 };
 
 
-module.export = {connect}
+module.exports = connect;
